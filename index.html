@@ -9,14 +9,43 @@
 </head>
 <body>
 
+<div class="container">
 
-    <form>
-        <button type="radio" name="candidate" value="biden">Biden</button>
-        <button type="radio" name="candidate" value="sanders">Sanders</button>
-        <button type="radio" name="candidate" value="buttigieg">Buttigieg</button>
-        <button type="radio" name="candidate" value="warren">Warren</button>
-        
+    <!-- Quiz info -->
+    <section class="quiz-info">
+        <h3 class="question-number">Question: <span>1/5</span></h3>
+        <h3 class="quiz-score">Score: <span>0/0</span></h3>
+    </section>
+
+    <!-- Question box -->
+    <section class="question">
+        <h2>Which of the following candidates said:</h2>
+        <blockquote class="question-text">THIS IS WHERE THE QUOTE WILL LOAD IN</blockquote>
+    </section>
+
+    <!-- Answer form -->
+    <form method="post" id="quiz">
+        <button type="raido" name="candidate" class="candidate" value="biden">
+            <img src="Img/Biden.jpg">
+            <h1>Joe Biden</h1>
+        </button>
+        <button type="raido" name="candidate" class="candidate" value="buttigieg">
+                <img src="Img/Buttigieg.jpg">
+                <h1>Pete Buttigieg</h1>
+        </button>
+        <button type="raido" name="candidate" class="candidate" value="sanders">
+            <img src="Img/Sanders.jpg">
+            <h1>Bernie Sanders</h1>
+        </button>
+        <button type="raido" name="candidate" class="candidate" value="warren">
+            <img src="Img/Warren.jpg">
+            <h1>Elizabeth Warren</h1>
+        </button>
+        <button class="submit">Submit</button>
     </form>
+
+</div>
+
     
 </body>
 </html>
