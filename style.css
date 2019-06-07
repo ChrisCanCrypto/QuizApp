@@ -75,7 +75,7 @@ button:hover, button:focus{
 }
 /* Main stylings */
 
-.quiz-start{
+.quiz-start, .response{
     display: block;
     text-align: center;
     width: 50%;
@@ -136,4 +136,14 @@ input {
 
 input:checked {
     border: 8px solid #ebca52;
+}
+
+.response{
+
+}
+
+.response img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
 }
