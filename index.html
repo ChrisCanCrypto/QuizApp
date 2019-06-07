@@ -7,23 +7,30 @@
     <title>Green New Deal Quiz</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header role="banner">
-        <i class="fas fa-globe-americas"></i>
-        <ul>
-            <li>Question: <span class="questionNumber">0</span>/10</li>
-            <li>Score: <span class="score">0</span></li>
-        </ul>
+        <div class="col-logo">
+            <a href="index.html">
+            <i class="fas fa-globe-americas fa-5x"></i>
+            </a>
+        </div>
+        <div class="col-info">
+            <ul>
+                <li>Question: <span class="questionNumber">0</span>/10</li>
+                <li>Score: <span class="score">0</span></li>
+            </ul>
+        </div>
     </header>
-
+    
     <main role="main">
         <div class="quiz-start">
             <h1>How well do you know the Green New Deal?</h1>
             <p>Answer these questions to show off your knowladge.</p>
             <button type="button" class="startButton">Start Quiz</button>
         </div>
+        
         <div class="question-form">
             <h2 class="question-text">Of the many goals in the Green New Deal which of the following is NOT inside the resolution?</h2>
             <fieldset>
@@ -43,6 +50,8 @@
                     <input type="radio" value="ans4" name="answer" required>
                     <span>Eliminating all cows from the face of the earth to ensure the elimination of Big Beef in the U.S.</span>
                 </label>
+
+                <button type="submit" class="submit-button">Submit</button>
             </fieldset>
         </div>
     </main>
