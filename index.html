@@ -4,48 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Quiz App</title>
+    <title>Green New Deal Quiz</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
 </head>
 <body>
+    <header role="banner">
+        <i class="fas fa-globe-americas"></i>
+        <ul>
+            <li>Question: <span class="questionNumber">0</span>/10</li>
+            <li>Score: <span class="score">0</span></li>
+        </ul>
+    </header>
 
-<div class="container">
+    <main role="main">
+        <div class="quiz-start">
+            <h1>How well do you know the Green New Deal?</h1>
+            <p>Answer these questions to show off your knowladge.</p>
+            <button type="button" class="startButton">Start Quiz</button>
+        </div>
+        <div class="question-form">
+            <h2 class="question-text">Of the many goals in the Green New Deal which of the following is NOT inside the resolution?</h2>
+            <fieldset>
+                <label class="answerOption">
+                    <input type="radio" value="ans1" name="answer" required>
+                    <span>Achieve net-zero greenhouse gas emissions through a fair and just transition for all communities and workers.</span>
+                </label>
+                <label class="answerOption">
+                    <input type="radio" value="ans2" name="answer" required>
+                    <span>Create millions of good, high-wage jobs; and ensure prosperity and economic security for all people of the United States.</span>
+                </label>
+                <label class="answerOption">
+                    <input type="radio" value="ans3" name="answer" required>
+                    <span>Overhauling U.S. transportation systems to eliminate pollution and greenhouse gas emissions, by investing in zero-emission vehicle infrastructure and manufacturing, as well as clean, affordable, and accessible public transit and high-speed rail.</span>
+                </label>
+                <label class="answerOption">
+                    <input type="radio" value="ans4" name="answer" required>
+                    <span>Eliminating all cows from the face of the earth to ensure the elimination of Big Beef in the U.S.</span>
+                </label>
+            </fieldset>
+        </div>
+    </main>
 
-    <!-- Quiz info -->
-    <section class="quiz-info">
-        <h3 class="question-number">Question: <span>1/5</span></h3>
-        <h3 class="quiz-score">Score: <span>0/0</span></h3>
-    </section>
 
-    <!-- Question box -->
-    <section class="question">
-        <h2>Which of the following candidates said:</h2>
-        <blockquote class="question-text">THIS IS WHERE THE QUOTE WILL LOAD IN</blockquote>
-    </section>
-
-    <!-- Answer form -->
-    <form method="post" id="quiz">
-        <button type="raido" name="candidate" class="candidate" value="biden">
-            <img src="Img/Biden.jpg">
-            <h1>Joe Biden</h1>
-        </button>
-        <button type="raido" name="candidate" class="candidate" value="buttigieg">
-                <img src="Img/Buttigieg.jpg">
-                <h1>Pete Buttigieg</h1>
-        </button>
-        <button type="raido" name="candidate" class="candidate" value="sanders">
-            <img src="Img/Sanders.jpg">
-            <h1>Bernie Sanders</h1>
-        </button>
-        <button type="raido" name="candidate" class="candidate" value="warren">
-            <img src="Img/Warren.jpg">
-            <h1>Elizabeth Warren</h1>
-        </button>
-        <button class="submit">Submit</button>
-    </form>
-
-</div>
-
-    
 </body>
 </html>
