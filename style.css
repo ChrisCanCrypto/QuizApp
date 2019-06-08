@@ -14,7 +14,6 @@ body{
 
 header{
     width: 100%;
-    padding: 30px 0px;
     font-size: 20px;
     background-color: #ffde16
 }
@@ -36,7 +35,7 @@ header ul{
 main{
     background-color: #e3eddf;
     width: 85%;
-    margin: auto auto;
+    margin: 10px auto;
 
 }
 
@@ -98,7 +97,7 @@ button:hover, button:focus{
     display: block;
     text-align: center;
     width: 75%;
-    margin: 100px auto;
+    margin: 25px auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -123,9 +122,10 @@ label {
     font-weight: bold;
 }
 
-label:hover, label:focus{
-    background-color: #fd9014;
-    color: #e3eddf;
+label:hover, label:focus, label input:checked{
+    /* background-color: #fd9014; */
+    color: slateblue;
+    
 }
 
 input[type="radio"]{
@@ -146,12 +146,12 @@ input {
     margin-right: 5px;
     position: relative;
     top: 2px;
+
 }
 
+
 input:checked {
-    border: 8px solid #ebca52;
-    background-color: black;
-    color: white;
+    border: 8px solid slateblue;
 }
 
 .response img{
@@ -162,4 +162,17 @@ input:checked {
 
 .hidden{
     display: none;
+}
+
+label:nth-child(1) {
+    background-color: #68E89B;
+}
+label:nth-child(2) {
+    background-color: #80FF8E;
+}
+label:nth-child(3) {
+    background-color: #83E868;
+}
+label:nth-child(4) {
+    background-color: #C0FF73;
 }
