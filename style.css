@@ -71,7 +71,7 @@ button{
     border-radius:2em;
     box-sizing: border-box;
     text-decoration:none;
-    color:#FFFFFF;
+    color: black;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s;
@@ -120,11 +120,13 @@ label {
     transition: all 0.3s ease-out;
     line-height: 22px;
     font-weight: bold;
+    background-color: #8f0d56;
+    color: #e3eddf;
 }
 
 label:hover, label:focus, label input:checked{
     /* background-color: #fd9014; */
-    color: slateblue;
+    color: white;
     
 }
 
@@ -164,15 +166,5 @@ input:checked {
     display: none;
 }
 
-label:nth-child(1) {
-    background-color: #68E89B;
-}
-label:nth-child(2) {
-    background-color: #80FF8E;
-}
-label:nth-child(3) {
-    background-color: #83E868;
-}
-label:nth-child(4) {
-    background-color: #C0FF73;
-}
+
+
