@@ -8,6 +8,7 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header role="banner">
@@ -18,7 +19,7 @@
         </div>
         <div class="col-info">
             <ul>
-                <li>Question: <span class="questionNumber">0</span>/10</li>
+                <li>Question: <span class="question-number">0</span>/10</li>
                 <li>Score: <span class="score">0</span></li>
             </ul>
         </div>
@@ -29,44 +30,63 @@
         <div class="quiz-start">
             <h1>How well do you know the Green New Deal?</h1>
             <p>Answer these questions to show off your knowladge.</p>
-            <button type="button" class="startButton">Start Quiz</button>
+            <button type="button" class="start-button">Start Quiz</button>
         </div>
         
         <!-- Question Form Section -->
-        <div class="question-form">
-            <h2 class="question-text">Of the many goals in the Green New Deal which of the following is NOT inside the resolution?</h2>
-            <fieldset>
-                <label class="answerOption">
-                    <input type="radio" value="ans1" name="answer" required>
-                    <span>Achieve net-zero greenhouse gas emissions through a fair and just transition for all communities and workers.</span>
-                </label>
-                <label class="answerOption">
-                    <input type="radio" value="ans2" name="answer" required>
-                    <span>Create millions of good, high-wage jobs; and ensure prosperity and economic security for all people of the United States.</span>
-                </label>
-                <label class="answerOption">
-                    <input type="radio" value="ans3" name="answer" required>
-                    <span>Overhauling U.S. transportation systems to eliminate pollution and greenhouse gas emissions, by investing in zero-emission vehicle infrastructure and manufacturing, as well as clean, affordable, and accessible public transit and high-speed rail.</span>
-                </label>
-                <label class="answerOption">
-                    <input type="radio" value="ans4" name="answer" required>
-                    <span>Eliminating all cows from the face of the earth to ensure the elimination of Big Beef in the U.S.</span>
-                </label>
-                <button type="submit" class="submit-button">Submit</button>
-            </fieldset>
+        <div class="question-form hidden">
+            <h2 class="question-text"></h2>
+            <form>
+                <fieldset>
+                    <label class="answerOption">
+                        <input type="radio" value="ans0" name="answer" required>
+                        <span></span>
+                    </label>
+                    <label class="answerOption">
+                        <input type="radio" value="ans1" name="answer" required>
+                        <span></span>
+                    </label>
+                    <label class="answerOption">
+                        <input type="radio" value="ans2" name="answer" required>
+                        <span></span>
+                    </label>
+                    <label class="answerOption">
+                        <input type="radio" value="ans3" name="answer" required>
+                        <span></span>
+                    </label>
+                    <button type="submit" class="submit-button">Submit</button>
+                </fieldset>
+            </form>
+
         </div>
 
-        <div class="response">
-            <h1 class="correct-ans">Correct!</h1>
-            <h1 class="wrong-ans">Not Exactly...</h1>
-            <img src="Img/cows.jpg" alt="cows">
-            <p>While cows do contribute to America's carbon footprint there is no effort outlined to eliminate cows and Big Beef in the U.S.</p>
+        <!-- Response feedback section -->
+        <div class="response hidden">
+            <h1 class="correct-ans hidden">Correct!</h1>
+            <h1 class="wrong-ans hidden">Not Exactly...</h1>
+            <img src="" alt="" class="response-img">
+            <p class="response-flavor"></p>
             <button type="button" class="learn-more"><a href="#">Learn More</a></button>
-            <button type="submit" class="next-question">Next Question</button>
+            <button type="button" class="next-question">Next Question</button>
+            <button type="button" class="view-results hidden">View Results</button>
+        </div>
+
+        <!-- Final Quiz Results -->
+        <div class="results hidden">
+            <h1 class="high-score hidden">You know a lot about the Green New Deal!</h1>
+            <h1 class="med-score hidden">You know a fair amout about the Green New Deal.</h1>
+            <h1 class="low-score hidden">Your understanding of the Green New Deal is a bit lackluster...</h1>
+            <p>You can always learn more and get involved with the Sunrise Movement to create a greener future</p>
+            <button type="button" class="learn-more"><a href="#">More About the Sunrise Movement</a></button>
+            <button type="reset"><a href='index.html'>Restart the quiz</a></button>
         </div>
 
     </main>
 
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="questions.js"></script>
+<script src="index.js"></script>
 </html>
