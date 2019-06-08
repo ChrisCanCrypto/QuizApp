@@ -70,11 +70,9 @@ function updateResultInfo(){
     $('.response-img').attr('src', QUESTIONS[questionNumber].image);
     $('.response-img').attr('alt', QUESTIONS[questionNumber].alt);
     $('.response-flavor').text(QUESTIONS[questionNumber].flavorText);
-}
-
-function updateResultFlavor(){
-
-}
+    $('.learn-more').attr('href', QUESTIONS[questionNumber].learnMoreLink);
+    $('.learn-more').attr('target', '_blank');
+}                              
 
 function correctResponse(){
 
