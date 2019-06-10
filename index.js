@@ -113,6 +113,7 @@ function nextQuesiton(){
 
 function viewResults(){
     $('.view-results').on('click', function(){
+        $('.final-score').html(score);
         $('.response').addClass('hidden');
         $('.results').removeClass('hidden');
         if(score > 3){
