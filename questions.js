@@ -65,7 +65,7 @@ const QUESTIONS = [
         ],
         correctAnswer: 'ans3',
         flavorText: "With a national GDP loss of $500,000,000,000 by 2100 many of the proponants of the Green New Deal believe the aggressive restructuring outlined will pay for itself.",
-        image: 'Img/Money.jpg',
+        image: 'Img/money.jpg',
         alt: 'Money',
         learnMoreLink: 'https://www.yaleclimateconnections.org/2019/04/climate-change-could-cost-u-s-economy-billions/'
     },
